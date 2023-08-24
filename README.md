@@ -1,19 +1,7 @@
-# CSL(Computer Science teachers' Love) at South Korea
+# A patch for Galapagosized HustOJ and CSL
 
-#2022.01.01     
-- Happy new year~~ all CS teachers!
+갈라파고스화된 HustOJ XML과 CSL XML을 상호 호환 가능하게 만드는 프로젝트입니다.
 
-#2021.10.13     
-- Restored to this new melongist from backups.     
-- Originals stuffed to https://github.com/melongist-zz/CSL         
-
-#2021.10.11     
-- Urgently backuped to melongist2!     
-     
-#2021.10.11
-- :( OMG!... 
-- MFA(Google Authenticator)entry lost ...   
-
-#2020.09.11
-- Made for CSL CS teachers.
-- what_is_computer@msn.com
+# 2023.08.
+* HustOJ 22-Aug-2023 Ver
+* CSL 10-Jul-2022 Ver
