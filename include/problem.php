@@ -5,7 +5,7 @@ function addproblem_csl($title, $time_limit, $memory_limit, $description, $input
   //* by CSL
   $sql = "INSERT INTO `problem_csl` (`problem_id`, `front`, `rear`, `bann`, `credits`) VALUES (?, ?, ?, ?, ?)";
   
-  $pid = pdo_query($problem_id, $front, $rear, $bann, $credits);
+  $pid = pdo_query($sql, $problem_id, $front, $rear, $bann, $credits);
   
   return $problem_id;
 }
