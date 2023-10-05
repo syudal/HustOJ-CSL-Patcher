@@ -9,6 +9,6 @@ sudo bash patch.sh
 </code></pre>
 
 # Test Note
-## 2023.08. Pass
-* HustOJ 22-Aug-2023 Ver
+## 2023.10. Pass
+* HustOJ 06-Oct-2023 Ver
 * CSL 10-Jul-2022 Ver
