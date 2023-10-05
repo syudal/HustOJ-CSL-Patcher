@@ -56,35 +56,6 @@ $rear = $_POST['rear'];
 $bann = $_POST['bann'];
 $credits = $_POST['credits'];
 
-if (false) {
-  $title = stripslashes($title);
-  $time_limit = stripslashes($time_limit);
-  $memory_limit = stripslashes($memory_limit);
-  $description = stripslashes($description);
-  $input = stripslashes($input);
-  $output = stripslashes($output);
-  $sample_input = stripslashes($sample_input);
-  $sample_output = stripslashes($sample_output);
-  $test_input = stripslashes($test_input);
-  $test_output = stripslashes($test_output);
-  $hint = stripslashes($hint);
-  $source = stripslashes($source);
-  $spj = stripslashes($spj);
-  $source = stripslashes($source);
-  
-  //+ by CSL
-  $front = stripslashes($front);
-  $rear = stripslashes($rear);
-  $bann = stripslashes($bann);
-  $credits = stripslashes($credits);
-  
-}
-
-$title = RemoveXSS($title);
-$description = RemoveXSS($description);
-$input = RemoveXSS($input);
-$output = RemoveXSS($output);
-$hint = RemoveXSS($hint);
 //echo "->".$OJ_DATA."<-"; 
 $pid = addproblem_csl($title, $time_limit, $memory_limit, $description, $input, $output, $sample_input, $sample_output, $hint, $source, $spj, $front, $rear, $bann, $credits, $OJ_DATA);
 $basedir = "$OJ_DATA/$pid";

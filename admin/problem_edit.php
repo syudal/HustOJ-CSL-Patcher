@@ -24,7 +24,7 @@ include_once("kindeditor.php") ;
     <?php
     if (isset($_GET['id'])) {
       ;//require_once("../include/check_get_key.php");
-        $pid=intval($_GET['pid']);
+        $pid=intval($_GET['id']);
         if(! (isset($_SESSION[$OJ_NAME.'_'.'administrator']) || isset($_SESSION[$OJ_NAME.'_'."p".$pid])) ){
                 echo "No Privilege.";
                 exit(0);
@@ -183,33 +183,6 @@ include_once("kindeditor.php") ;
       $credits = $_POST['credits'];
 	  
 
-      if (false) {
-        $title = stripslashes($title);
-        $time_limit = stripslashes($time_limit);
-        $memory_limit = stripslashes($memory_limit);
-        $description = stripslashes($description);
-        $input = stripslashes($input);
-        $output = stripslashes($output);
-        $sample_input = stripslashes($sample_input);
-        $sample_output = stripslashes($sample_output);
-        //$test_input = stripslashes($test_input);
-        //$test_output = stripslashes($test_output);
-        $hint = stripslashes($hint);
-        $source = stripslashes($source);
-        $spj = stripslashes($spj);
-		
-        //+ by CSL ?????
-        $front = stripslashes($front);
-        $rear = stripslashes($rear);
-        $bann = stripslashes($bann);
-        $credits = stripslashes($credits);
-      }
-
-      $title = ($title);
-      $description = RemoveXSS($description);
-      $input = RemoveXSS($input);
-      $output = RemoveXSS($output);
-      $hint = RemoveXSS($hint);
       $basedir = $OJ_DATA."/$id";
 
       echo "Problem Updated!<br>";
